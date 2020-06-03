@@ -16,6 +16,8 @@ try:
 except Exception as e:
     if "user data directory is already in use" in e:
         print("Please close the brwser previously spawned by the bot")
+    if "Chrome failed to start: exited abnormally." in e:
+        print("Chromium cannot be run as root :(")
     exit()
 
 # Clear the screen
