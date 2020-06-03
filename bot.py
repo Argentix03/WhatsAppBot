@@ -14,10 +14,10 @@ try:
     browser.get('https://web.whatsapp.com')
     sleep(5)
 except Exception as e:
-    if "user data directory is already in use" in e:
-        print("Please close the brwser previously spawned by the bot")
     if "Chrome failed to start: exited abnormally." in e:
         print("Chromium cannot be run as root :(")
+    if "user data directory is already in use" in e:
+        print("Please close the brwser previously spawned by the bot")
     exit()
 
 # Clear the screen
