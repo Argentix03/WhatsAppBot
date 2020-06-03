@@ -5,19 +5,23 @@ from os import system, name
 
 try:
     # Selenium stuff
-    chrome_app_data = r'~/.config/chromium/Default'
+    chrome_app_data = r'~/.config/chromium/Default/'
     options = webdriver.ChromeOptions()
     options.add_argument('--user-data-dir=' + chrome_app_data)
     options.add_argument('--profile-directory=Default')
+    options.add_argument('--disk-cache-dir=' + chrome_app_data)
     options.add_argument('--headless')  # headless
+    options.add_argument('--no-sandbox')  # headless
+    options.add_argument('--disable-gpu')  # headless
+    options.headless = True  # headless
     browser = webdriver.Chrome(executable_path='chromedriver')
     browser.get('https://web.whatsapp.com')
     sleep(5)
 except Exception as e:
-    if "Chrome failed to start: exited abnormally." in e:
-        print("Chromium cannot be run as root :(")
     if "user data directory is already in use" in e:
         print("Please close the brwser previously spawned by the bot")
+    if "Chrome failed to start: exited abnormally." in e:
+        print("Chromium cannot be run as root :(")
     exit()
 
 # Clear the screen
