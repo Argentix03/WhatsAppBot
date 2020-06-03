@@ -5,11 +5,11 @@ from os import system, name
 
 try:
     # Selenium stuff
-    chrome_app_data = r'C:\Users\Argen\AppData\Local\Google\Chrome\User Data\Default'
+    chrome_app_data = r'~/.config/chromium/Default'
     options = webdriver.ChromeOptions()
     options.add_argument('--user-data-dir=' + chrome_app_data)
     options.add_argument('--profile-directory=Default')
-    browser = webdriver.Chrome(executable_path='chromedriver.exe', options=options)
+    browser = webdriver.Chrome(executable_path='chromedriver')
     browser.get('https://web.whatsapp.com')
     sleep(5)
 except Exception as e:
