@@ -9,6 +9,7 @@ try:
     options = webdriver.ChromeOptions()
     options.add_argument('--user-data-dir=' + chrome_app_data)
     options.add_argument('--profile-directory=Default')
+    options.add_argument('--headless')  # headless
     browser = webdriver.Chrome(executable_path='chromedriver')
     browser.get('https://web.whatsapp.com')
     sleep(5)
