@@ -22,3 +22,7 @@ If setup.py doesnt work you may have to go to https://chromedriver.chromium.org/
 ```
 $ python bot.py
 ```
+
+### Notes:
+1. First run need to scan the QR code after the browser comes up.  
+2. Cannot be run as root  
