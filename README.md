@@ -1,7 +1,7 @@
 # WhatsAppBot
-Simple Python WhatsAppBot using selenium with the chrome webdriver.
+Simple Python WhatsApp bot using selenium with the chrome webdriver.
 
-currently is just a CLI client for whatsapp chat no bot functionality yet.
+currently is just a CLI client for whatsapp, no bot functionality yet.
 
 ## Install
 1. Download the zip  
