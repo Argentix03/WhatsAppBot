@@ -15,7 +15,8 @@ $ pip3 install -U selenium
 $ pip3 install -U requests
 $ python setup.py
 ```
-
+Note:  
+If setup.py doesnt work you may have to go to https://chromedriver.chromium.org/downloads, download the right webdriver for your chrome/chromium version and put it in the same directory.
 
 ## Run
 ```
