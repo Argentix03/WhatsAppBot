@@ -14,3 +14,8 @@ Alternatively
 1. Download the zip  
 2. Extract it
 3. Run setup.bat
+
+## Run
+```
+$ python bot.py
+```
