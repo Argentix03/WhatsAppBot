@@ -13,7 +13,7 @@ try:
     browser.get('https://web.whatsapp.com')
     sleep(5)
 except Exception as e:
-    if "user data directory is already in use" in e:
+    if "user data directory is already in use" in str(e):
         print("Please close the brwser previously spawned by the bot")
     exit()
 
